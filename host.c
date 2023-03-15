@@ -1,7 +1,7 @@
 #define CL_USE_DEPRECATED_OPENCL_1_2_APIS
 #include <stdio.h>
 #include <stdlib.h>
-#include <OpenCL/cl.h>
+#include <CL/cl.h>
 
 #define N 1024
 
