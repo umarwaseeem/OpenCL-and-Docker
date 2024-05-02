@@ -33,3 +33,9 @@ docker build -t opencl-image .
 docker run -it opencl-image
 make crun
 ```
+
+## Video Tutorial
+
+<div align="left">
+  <a href="https://www.youtube.com/watch?v=m1yJHtwSTqM"><img src="https://img.youtube.com/vi/m1yJHtwSTqM/0.jpg" alt="IMAGE ALT TEXT"></a>
+</div>
