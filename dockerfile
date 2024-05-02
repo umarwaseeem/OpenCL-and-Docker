@@ -6,3 +6,4 @@ RUN apt-get update && \
 WORKDIR /app
 
 COPY host.c /app/
+COPY Makefile /app/

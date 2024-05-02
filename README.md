@@ -21,7 +21,15 @@ The docker file installs the following in an isolated Ubuntu Linux container:
 3. Open the downloaded / cloned repo in a command line or better, open in vs code.
 4. Run `docker build -t opencl-image .` (can take 3 - 8 minutes)
 5. After its done, run `docker run -it opencl-image`
-6. You start with `/app` directory. Verify that there is a `host.c` file in the directory.
-7. Run `gcc host.c -o host -lOpenCL` to compile the code.
-8. `./host` to run.
+6. You start with `/app` directory. Verify that there is a `host.c` and `Makefile` file in the directory.
+7. Run `make crun` to compile and run host.c program.
+8. Optionally, you can do it in following ways:
+9. Run `make` to compile the file and then `make run` to execute.
+10. Or run `gcc host.c -o host -lOpenCL` to compile the code and `./host` to run.
 
+```bash
+git clone https://github.com/Umar-Waseem/OpenCL-and-Docker
+docker build -t opencl-image .
+docker run -it opencl-image
+make crun
+```
